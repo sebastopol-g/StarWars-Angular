@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { TabsComponent } from './tabs/tabs.component';
 import { ItemComponent } from './item/item.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TabsComponent,
-    ItemComponent
+    ItemComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
