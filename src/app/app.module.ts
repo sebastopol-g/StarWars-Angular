@@ -3,6 +3,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AlertModule } from 'ngx-bootstrap/alert';
 import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { TabsComponent } from './tabs/tabs.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlertModule.forRoot()
   ],
   providers: [
     provideClientHydration()
