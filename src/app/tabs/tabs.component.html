@@ -1,11 +1,12 @@
 <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">All</a>
+    <li role="presentation" class="nav-item">
+      <a class="nav-link active" aria-current="page" (click)="onChoose('all')" style="cursor: pointer" href="#">All</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Light</a>
+    <li role="presentation" class="nav-item">
+      <a class="nav-link" (click)="onChoose('light')" style="cursor: pointer" href="#">Light</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Dark</a>
+    <li role="presentation" class="nav-item">
+      <a class="nav-link" (click)="onChoose('dark')" style="cursor: pointer" href="#">Dark</a>
     </li>
-  </ul>
+</ul>
+<app-list [characters]="getCharacters()"></app-list>
