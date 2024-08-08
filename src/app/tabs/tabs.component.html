@@ -9,4 +9,4 @@
       <a class="nav-link" (click)="onChoose('dark')" style="cursor: pointer" href="#">Dark</a>
     </li>
 </ul>
-<app-list [characters]="getCharacters()"></app-list>
+<app-list [characters]="getCharacters()" (sideAssigned)="onSideAssigned($event)"></app-list>

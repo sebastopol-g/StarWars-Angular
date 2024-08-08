@@ -13,6 +13,7 @@ export class TabsComponent {
 
   chosenList = 'all';
 
+
   getCharacters(){
     if(this.chosenList === 'all') {
       return this.characters.slice();
@@ -24,5 +25,10 @@ export class TabsComponent {
 
   onChoose(side){
     this.chosenList = side;
+  }
+
+  onSideAssigned(charInfo){
+    const pos = this.characters.findIndex((char) => { return char.name === charInfo.name })
+    this.characters[pos].side = charInfo.side;
   }
 }
