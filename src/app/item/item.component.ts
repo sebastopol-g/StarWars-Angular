@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { StarWarsService } from '../star-wars.service';
 
 @Component({
@@ -8,7 +8,6 @@ import { StarWarsService } from '../star-wars.service';
 })
 export class ItemComponent {
   @Input() character;
-  @Output() characterSide = new EventEmitter<{name: string, side: string}>();
   swService: StarWarsService
   
   constructor(swService: StarWarsService) {
