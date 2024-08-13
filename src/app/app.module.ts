@@ -7,6 +7,7 @@ import { AlertModule } from 'ngx-bootstrap/alert';
 import { TabsComponent } from './tabs/tabs.component';
 import { ItemComponent } from './item/item.component';
 import { ListComponent } from './list/list.component';
+import { StarWarsService } from './star-wars.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ListComponent } from './list/list.component';
     AlertModule.forRoot()
   ],
   providers: [
+    StarWarsService,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
